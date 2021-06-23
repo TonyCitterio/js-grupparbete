@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.card-search {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.25rem;
+  position: absolute;
+  top: 75px;
+  position: relative;
+}
+
+.card-search h2 {
+  margin-bottom: 1rem;
+}
+
+.card-search input {
+  width: 50%;
+  margin-bottom: 0.75rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.card-search button {
+  width: 185px;
+  height: 20px;
+  background-color: rgb(187, 187, 187);
+  border: none;
+}
+
+#error {
+  width: 185px;
+  height: 20px;
+
+  justify-content: center;
+  display: flex;
+  margin-top: 0.75rem;
+  background-color: orange;
+  position: absolute;
+  bottom: 10px;
+}
+
+#error:not([data-active]) {
+  display: none;
+}
+
+.card-result-lyrics {
+  width: 60%;
+  height: 350px;
+  text-align: center;
+  overflow-y: scroll;
+  display: none;
+  position: absolute;
+  top: 300px;
+}
+
+.card-result-lyrics p {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.card-result-No-Match {
+  width: 60%;
+  height: 70px;
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+  position: absolute;
+  top: 300px;
+  padding-top: 1.2rem;
+  color: orange;
+}
+
+.shadow {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}

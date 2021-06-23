@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inlämning Grupprojekt</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="card-search shadow">
+            <h2>Search for lyrics</h2>
+            <input type="text" id="input-artist" placeholder="Input Artist..." />
+            <input type="text" id="input-song-title" placeholder="Input Song title..." />
+            <button id="click">Search</button>
+            <div id="error"></div>
+        </div>
+
+        <div class="card-result-lyrics shadow" id="card-result-lyrics">
+            <p id="lyricSection"></p>
+        </div>
+        <div class="card-result-No-Match shadow" id="card-result-No-Match">
+            <p>No Match</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
